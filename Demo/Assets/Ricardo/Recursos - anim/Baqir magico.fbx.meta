@@ -3,7 +3,12 @@ guid: 33bb2cdae1c9bbe489ae0f937bf6ca38
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BAQIR
+    second: {fileID: 2100000, guid: a3d5de2e0934a414c976c0111e397401, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1033,9 +1033,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4856441127882517943, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790396714}
-    - targetCorrespondingSourceObject: {fileID: -1834158662606075370, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -6079037003976305514, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2087817127}
+      addedObject: {fileID: 1836063685}
     - targetCorrespondingSourceObject: {fileID: 9178222161110034055, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1174226605}
@@ -2978,11 +2978,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4201013158358579046, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
   m_PrefabInstance: {fileID: 739977260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1836063683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6079037003976305514, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
+  m_PrefabInstance: {fileID: 739977260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1836063684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3021226162504597134, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
   m_PrefabInstance: {fileID: 739977260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1836063685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836063683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8935e03361a14ec4b8edc872f76bc822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_ConstrainedObject: {fileID: 1836063684}
+    m_SourceObjects:
+      m_Length: 1
+      m_Item0:
+        transform: {fileID: 332386243}
+        weight: 1
+      m_Item1:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item2:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item3:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item4:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item5:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item6:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item7:
+        transform: {fileID: 0}
+        weight: 0
+    m_ConstrainedPositionAxes:
+      x: 1
+      y: 1
+      z: 1
+    m_ConstrainedRotationAxes:
+      x: 1
+      y: 1
+      z: 1
+    m_MaintainPositionOffset: 0
+    m_MaintainRotationOffset: 0
 --- !u!4 &1839193408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5311181910305755417, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
@@ -3311,67 +3367,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3450560261862939645, guid: 3ae2d0dd6a630ed4d9000dfdcab2631b, type: 3}
   m_PrefabInstance: {fileID: 208565970}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2087817125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1834158662606075370, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
-  m_PrefabInstance: {fileID: 739977260}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2087817126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5775264710230041058, guid: 33bb2cdae1c9bbe489ae0f937bf6ca38, type: 3}
   m_PrefabInstance: {fileID: 739977260}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2087817127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087817125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8935e03361a14ec4b8edc872f76bc822, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Weight: 1
-  m_Data:
-    m_ConstrainedObject: {fileID: 2087817126}
-    m_SourceObjects:
-      m_Length: 1
-      m_Item0:
-        transform: {fileID: 332386243}
-        weight: 1
-      m_Item1:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item2:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item3:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item4:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item5:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item6:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item7:
-        transform: {fileID: 0}
-        weight: 0
-    m_ConstrainedPositionAxes:
-      x: 1
-      y: 1
-      z: 1
-    m_ConstrainedRotationAxes:
-      x: 1
-      y: 1
-      z: 1
-    m_MaintainPositionOffset: 0
-    m_MaintainRotationOffset: 0
 --- !u!4 &2089404419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5012109241933610347, guid: 3ae2d0dd6a630ed4d9000dfdcab2631b, type: 3}

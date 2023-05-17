@@ -27463,9 +27463,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 6597239567068149454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: d546b356ec3d93e4b996d396011a437e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionReference: {fileID: 6597239566140374671}
+  innerDetectionReference: {fileID: 6597239566429687453}
+  radius: 0.27
+  detectionLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6597239567068149451}
+        m_TargetAssemblyTypeName: IKSnapper, Assembly-CSharp
+        m_MethodName: SetWeight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6597239567068149451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27475,9 +27496,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 6597239567068149454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 275c9954ab0997741a78fcd599331854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  proceduralInfluence: 0
+  animatedBones:
+  - {fileID: 6597239566890241263}
+  - {fileID: 6597239566668384269}
+  - {fileID: 6597239566673086565}
+  - {fileID: 6597239566679951051}
+  - {fileID: 6597239566545263946}
+  - {fileID: 6597239566959890080}
+  - {fileID: 6597239567043752440}
+  - {fileID: 6597239567178813390}
+  - {fileID: 6597239567233298672}
+  - {fileID: 6597239566667620922}
+  - {fileID: 6597239566167622205}
+  - {fileID: 6597239566170221795}
+  - {fileID: 6597239566179650002}
+  - {fileID: 6597239567754509795}
+  - {fileID: 6597239567230175732}
+  - {fileID: 6597239568084387599}
+  - {fileID: 6597239566268413307}
+  - {fileID: 6597239567461254710}
+  proceduralBones:
+  - {fileID: 6597239566891015515}
+  - {fileID: 6597239567360315603}
+  - {fileID: 6597239567184984466}
+  intepolationSpeed: 1
 --- !u!4 &6597239567068149453
 Transform:
   m_ObjectHideFlags: 0
@@ -28933,8 +28979,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proceduralInfluence: 0
-  animatedBones: []
-  proceduralBones: []
+  animatedBones:
+  - {fileID: 6597239567304743574}
+  - {fileID: 6597239568179739115}
+  - {fileID: 6597239567976334654}
+  - {fileID: 6597239566937221452}
+  - {fileID: 6597239567480850314}
+  - {fileID: 6597239566472026690}
+  - {fileID: 6597239567629246881}
+  proceduralBones:
+  - {fileID: 6597239566246539313}
+  - {fileID: 6597239566429974282}
+  - {fileID: 6597239566429974283}
+  - {fileID: 6597239567472535002}
   intepolationSpeed: 1
 --- !u!4 &6597239567493287839
 Transform:
@@ -31366,9 +31423,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 6597239568020824154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 275c9954ab0997741a78fcd599331854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  proceduralInfluence: 0
+  animatedBones:
+  - {fileID: 6597239566538701646}
+  - {fileID: 6597239566538701647}
+  - {fileID: 6597239566526883383}
+  - {fileID: 6597239566538701644}
+  - {fileID: 6597239567736167900}
+  - {fileID: 6597239566045894026}
+  - {fileID: 6597239566538701645}
+  proceduralBones:
+  - {fileID: 6597239566878640474}
+  - {fileID: 6597239567043418408}
+  - {fileID: 6597239567043418409}
+  - {fileID: 6597239567472535001}
+  intepolationSpeed: 1
 --- !u!4 &6597239568020824153
 Transform:
   m_ObjectHideFlags: 0

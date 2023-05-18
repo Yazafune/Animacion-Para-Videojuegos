@@ -1,30 +1,46 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using OpenCover.Framework.Model;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using CallbackContext = UnityEngine.InputSystem.InputAction.CallbackContext;
 
-public class SimpleMovement : MonoBehaviour
+namespace Ana
 {
-    [SerializeField] private Camera camera;
-   
-    private void Start()
+    [Serializable]
+    public class UnityFloatEvent : UnityEvent<float>
     {
         
     }
-
-    private void Update()
+    public class SimpleMovement : MonoBehaviour
     {
+        [SerializeField] private Transform cameraTransform;
+        [SerializeField] private Vector2 inputValue;
+        [SerializeField] private Vector2 smoothInput;
+        [SerializeField] private float speed;
+        [SerializeField] private float aceleration;
+        [SerializeField] private UnityFloatEvent onMoved;
         
-    }
+        public void Move(CallbackContext context)
+        {
+            inputValue = context.ReadValue<Vector2>();
+        }
 
-    public void Move(CallbackContext context)
-    {
-        Vector2 inputValue = context.ReadValue<Vector2>();
-        Vector3 newForward = Vector3.ProjectOnPlane(camera.transform.forward, transform.up);
-        Vector3 newRight = camera.transform.right;
-        transform.Translate(newForward * inputValue.y + newRight * inputValue.x);
-        
+        private void Update()
+        {
+            smoothInput = Vector2.Lerp(smoothInput, inputValue, Time.deltaTime * aceleration);
+            Vector3 forwardVector = Vector3.ProjectOnPlane(cameraTransform.forward, transform.up);
+            Vector3 rigthVector = cameraTransform.right;
+            Vector3 motionVector = forwardVector * smoothInput.y + rigthVector * smoothInput.x;
+            transform.Translate(motionVector * (Time.deltaTime * speed), Space.World);
+            onMoved?.Invoke(smoothInput.magnitude / 1.414f);
+            if (motionVector.magnitude > 0.01)
+            {
+                transform.forward = motionVector.normalized;
+            }
+        }
     }
 }
+

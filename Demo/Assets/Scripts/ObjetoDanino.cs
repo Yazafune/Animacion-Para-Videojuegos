@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjetoDanino : MonoBehaviour
 {
-    public int cantidadDanio = 10; // Cantidad de daño causado al jugador
+    public int cantidadDanio; // Cantidad de daño causado al jugador
     public SaludPersonaje saludPersonaje; // Referencia al script de salud del jugador
 
     private void OnTriggerEnter(Collider other)

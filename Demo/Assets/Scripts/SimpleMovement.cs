@@ -26,7 +26,6 @@ namespace Ana
         public void Move(CallbackContext context)
         {
             inputValue = context.ReadValue<Vector2>();
-            Debug.Log("me muevo");
         }
 
         private void Update()

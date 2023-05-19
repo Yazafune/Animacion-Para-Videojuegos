@@ -26,6 +26,7 @@ namespace Ana
         public void Move(CallbackContext context)
         {
             inputValue = context.ReadValue<Vector2>();
+            Debug.Log("me muevo");
         }
 
         private void Update()
@@ -35,7 +36,7 @@ namespace Ana
             Vector3 rigthVector = cameraTransform.right;
             Vector3 motionVector = forwardVector * smoothInput.y + rigthVector * smoothInput.x;
             transform.Translate(motionVector * (Time.deltaTime * speed), Space.World);
-            onMoved?.Invoke(smoothInput.magnitude / 1.414f);
+            onMoved?.Invoke(smoothInput.magnitude);
             if (motionVector.magnitude > 0.01)
             {
                 transform.forward = motionVector.normalized;

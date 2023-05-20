@@ -63,13 +63,13 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunning", true);
-            animator.SetBool("IsWalking", false);
+
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunning", false);
-            animator.SetBool("IsWalking", true);
+
         }
 
     }

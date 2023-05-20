@@ -6,6 +6,7 @@ public class ManagerPersonajes : MonoBehaviour
 {
     [SerializeField] GameObject[] personaje;
     [SerializeField] ObjetoDanino[] trampa;
+    [SerializeField] SeguirJugador camara;
     void Start()
     {
         Desactivar();
@@ -29,6 +30,7 @@ public class ManagerPersonajes : MonoBehaviour
     void EstablecerValores(int i)
     {
         personaje[i].SetActive(true);
+        camara.jugador = personaje[i].transform;
         trampa[0].saludPersonaje = personaje[i].GetComponent<SaludPersonaje>();
         trampa[1].saludPersonaje = personaje[i].GetComponent<SaludPersonaje>();
     }

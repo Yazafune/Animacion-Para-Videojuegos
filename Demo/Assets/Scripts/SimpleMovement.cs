@@ -22,6 +22,7 @@ namespace Ana
         [SerializeField] private float speed;
         [SerializeField] private float aceleration;
         [SerializeField] private UnityFloatEvent onMoved;
+        //[SerializeField] private UnityEvent onFoot;
         
         public void Move(CallbackContext context)
         {
@@ -36,6 +37,7 @@ namespace Ana
             Vector3 motionVector = forwardVector * smoothInput.y + rigthVector * smoothInput.x;
             transform.Translate(motionVector * (Time.deltaTime * speed), Space.World);
             onMoved?.Invoke(smoothInput.magnitude);
+            //onFoot?.Invoke();
             if (motionVector.magnitude > 0.01)
             {
                 transform.forward = motionVector.normalized;

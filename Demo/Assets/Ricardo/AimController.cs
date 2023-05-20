@@ -11,6 +11,10 @@ public class AimController : MonoBehaviour
     [SerializeField] LayerMask detectionMask;
 
     [SerializeField] MultiAimConstraint aimConstraint;
+    private void Start()
+    {
+        aimConstraint = this.aimConstraint ;
+    }
     private void FixedUpdate()
     {
         Collider[] detected = Physics.OverlapSphere(transform.TransformPoint(relativeDetectionPosition), detectionRadius, detectionMask);
@@ -18,8 +22,12 @@ public class AimController : MonoBehaviour
         {
             aimConstraint.weight = 1;
             aimConstraint.data.sourceObjects.Clear();
-            aimConstraint.data.sourceObjects.Add(new WeightedTransform(detected[0].transform, 1f));
+            aimConstraint.data.sourceObjects.Add(new WeightedTransform(detected[0].transform, 1));
 
+        }
+        else
+        {
+            aimConstraint.weight = 0;
         }
 
     }

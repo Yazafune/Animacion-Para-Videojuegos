@@ -17,135 +17,9 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
-      in configuration does not match rotation in animation file:\n\t'DEF-shin.L.001'
-      : rotation error = 7.095506 deg\n\t'DEF-shin.R.001' : rotation error = 7.095512
-      deg\n"
+    rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Taiabi_rig|Idle breaker' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'torso' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'MCH-spine.002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'head'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L'
-      has scale animation that will be discarded.\n\t'DEF-shin.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R' has scale animation
-      that will be discarded.\n\t'DEF-thigh.R.001' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'DEF-shin.R' has scale
-      animation that will be discarded.\n\t'DEF-shin.R.001' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'DEF-foot.R'
-      has scale animation that will be discarded.\n\nClip 'Taiabi_rig|IDLE_' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'MCH-spine.002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.R'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Taiabi_rig|Jump' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'torso'
-      has translation animation that will be discarded.\n\t'torso' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'MCH-spine.002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'head'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L'
-      has scale animation that will be discarded.\n\t'DEF-shin.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R' has scale animation
-      that will be discarded.\n\t'DEF-thigh.R.001' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'DEF-shin.R' has scale
-      animation that will be discarded.\n\t'DEF-shin.R.001' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'DEF-foot.R'
-      has scale animation that will be discarded.\n\nClip 'Taiabi_rig|Muerte' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'torso' has translation
-      animation that will be discarded.\n\t'torso' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'MCH-spine.002' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'head'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L'
-      has scale animation that will be discarded.\n\t'DEF-shin.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R' has scale animation
-      that will be discarded.\n\t'DEF-thigh.R.001' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'DEF-shin.R' has scale
-      animation that will be discarded.\n\t'DEF-shin.R.001' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'DEF-foot.R'
-      has scale animation that will be discarded.\n\nClip 'Taiabi_rig|RunCycle' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'torso' has translation
-      animation that will be discarded.\n\t'torso' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'MCH-spine.002' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'head'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L'
-      has scale animation that will be discarded.\n\t'DEF-shin.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R' has scale animation
-      that will be discarded.\n\t'DEF-thigh.R.001' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'DEF-shin.R' has scale
-      animation that will be discarded.\n\t'DEF-shin.R.001' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'DEF-foot.R'
-      has scale animation that will be discarded.\n\nClip 'Taiabi_rig|Walk cycle'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'torso'
-      has translation animation that will be discarded.\n\t'torso' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'MCH-spine.002'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-ROT-neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'neck'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.L.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-upper_arm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-forearm.R.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine.001'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MCH-spine'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-thigh.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin.L'
-      has scale animation that will be discarded.\n\t'DEF-shin.L.001' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot.L'
-      has scale animation that will be discarded.\n\t'DEF-thigh.R' has scale animation
-      that will be discarded.\n\t'DEF-thigh.R.001' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'DEF-shin.R' has scale
-      animation that will be discarded.\n\t'DEF-shin.R.001' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'DEF-foot.R'
-      has scale animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -307,15 +181,15 @@ ModelImporter:
       name: Taiabi_rig|Walk cycle
       takeName: Taiabi_rig|Walk cycle
       internalID: -2957447943042327702
-      firstFrame: 0
-      lastFrame: 36
+      firstFrame: 1
+      lastFrame: 33
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

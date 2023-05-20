@@ -8,19 +8,33 @@ using UnityEngine.SceneManagement;
     public class VidaYDaño : MonoBehaviour
     {
         public int vida = 100;
+        public bool muerto = false;
 
         [SerializeField] private UnityEvent onDeath;
+        [SerializeField] private UnityEvent onDamage;
 
         public void RestarVida(int cantidad)
         {
             vida -= cantidad;
             UIVida.instance.Salud(cantidad);
-
-            if (cantidad <= 0)
+            
+            if (vida <= 0 && muerto == false)
             {
+                muerto = true;
                 onDeath?.Invoke();
-                CambiarDeScena();
+                Debug.Log("me mori");
+                Invoke("CambiarDeScena", 4);
             }
+
+            if (muerto == true)
+            {
+                return;
+            }
+            
+            
+            onDamage?.Invoke();
+            Debug.Log("auch");
+            
         }
     
         private void CambiarDeScena()

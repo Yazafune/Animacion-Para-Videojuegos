@@ -17,12 +17,23 @@ public class AnimationController : MonoBehaviour
     
     public void SetJumpTrigger()
     {
-        
+        GetComponent<Animator>().SetTrigger("Jump");
+    }
+    
+    public void SetDamageTrigger()
+    {
+        GetComponent<Animator>().SetTrigger("Damage");
     }
     public void SetDeathTrigger()
     {
-        
+        GetComponent<Animator>().SetTrigger("Death");
     }
+    
+    public void SetFootTrigger()
+    {
+        GetComponent<Animator>().SetTrigger("Foot");
+    }
+   
     
     
 }

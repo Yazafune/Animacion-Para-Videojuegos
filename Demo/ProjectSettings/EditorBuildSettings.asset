@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CampoDePruebas.unity
     guid: bcd736e80e2befd4e87df2cdd1fa759d
+  - enabled: 1
+    path: Assets/Ana/Escena Ana.unity
+    guid: 5a543e4eb61eb694ba8609dbabf68498
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 44671938bf7d03443a6b8e9f567d2b53, type: 2}

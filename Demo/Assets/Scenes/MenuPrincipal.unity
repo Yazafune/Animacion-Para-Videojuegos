@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 534600429}
   - component: {fileID: 534600428}
   - component: {fileID: 534600427}
-  - component: {fileID: 534600426}
+  - component: {fileID: 534600430}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -366,19 +366,6 @@ RectTransform:
   m_AnchoredPosition: {x: -225.28201, y: 20.872}
   m_SizeDelta: {x: 148.1255, y: 41.745}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &534600426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534600424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c85095093e038446a2545a1df7707cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numPj: 1
 --- !u!114 &534600427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,9 +410,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 534600426}
-        m_TargetAssemblyTypeName: SeleccionarPJ, Assembly-CSharp
-        m_MethodName: EmpezarDemo
+      - m_Target: {fileID: 534600430}
+        m_TargetAssemblyTypeName: CargarNuevaEscena, Assembly-CSharp
+        m_MethodName: Cargar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -473,6 +460,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534600424}
   m_CullTransparentMesh: 1
+--- !u!114 &534600430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534600424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579eb56a84ba2094fbd9c3f9137a46c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: Escena Ana
 --- !u!1 &678523506
 GameObject:
   m_ObjectHideFlags: 0

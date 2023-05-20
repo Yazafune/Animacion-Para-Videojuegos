@@ -72,6 +72,19 @@ public class AnimationController : MonoBehaviour
 
         }
 
+        //Ataque 1
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetBool("IsAttacking1", true);
+
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            animator.SetBool("IsAttacking1", false);
+
+        }
+
     }
 
 }

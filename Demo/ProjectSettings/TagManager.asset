@@ -17,7 +17,9 @@ TagManager:
   - Player
   - Terrain
   - Perreo
+
   - Enemy
+
   - 
   - 
   - 
@@ -27,6 +29,7 @@ TagManager:
   - 
   - 
   - 
+  - Bolita
   - 
   - 
   - 

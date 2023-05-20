@@ -18,11 +18,21 @@ public class AnimationController : MonoBehaviour
     
     public void SetJumpTrigger()
     {
-        
+        GetComponent<Animator>().SetTrigger("Jump");
+    }
+    
+    public void SetDamageTrigger()
+    {
+        GetComponent<Animator>().SetTrigger("Damage");
     }
     public void SetDeathTrigger()
     {
-        
+        GetComponent<Animator>().SetTrigger("Death");
+    }
+    
+    public void SetFootTrigger()
+    {
+        GetComponent<Animator>().SetTrigger("Foot");
     }
 
     private void Update()
@@ -53,11 +63,13 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunning", true);
+            animator.SetBool("IsWalking", false);
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", true);
         }
 
     }

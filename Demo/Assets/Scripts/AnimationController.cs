@@ -27,27 +27,39 @@ public class AnimationController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey("w"))
+        //moverse
+        if(Input.GetKeyDown("w"))
         {
-            animator.SetBool("IsWalking",true);
-            animator.SetBool("Isidle", false);
-        }
-        else
-        {
-            animator.SetBool("IsWalking", false);
-            animator.SetBool("Isidle", true);
+            animator.SetBool("IsWalking", true);          
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyUp("w"))
         {
-            animator.SetBool("IsWalking", true);
-            animator.SetBool("Isidle", false);
+            animator.SetBool("IsWalking", false);        
         }
-        else
+
+        //saltar
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            animator.SetBool("IsWalking", false);
-            animator.SetBool("Isidle", true);
+            animator.SetBool("IsJumping", true);
         }
+        
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
+        //correr
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            animator.SetBool("IsRunning", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            animator.SetBool("IsRunning", false);
+        }
+
     }
 
 }

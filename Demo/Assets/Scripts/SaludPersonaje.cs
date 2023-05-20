@@ -7,7 +7,7 @@ public class SaludPersonaje : MonoBehaviour
 {
     public int saludMaxima = 100; // Salud máxima del personaje
     [SerializeField] int saludActual; // Salud actual del personaje
-
+    [SerializeField] AnimationController controller;
     private bool regenerandoSalud = false; // Variable que indica si se está regenerando la salud
     public int tiempoEspera = 6; // Tiempo de espera en segundos antes de iniciar la regeneración de salud
     public float tiempoRegeneracion = 6f; // Tiempo en segundos para regenerar la salud
@@ -16,6 +16,7 @@ public class SaludPersonaje : MonoBehaviour
     private float tiempoUltimoDanio; // Tiempo en que se recibió el último daño
     private int saludInicialRegeneracion; // Valor inicial de salud al iniciar la regeneración
 
+    [SerializeField] REvents muerte;
     private void Start()
     {
         saludActual = saludMaxima; // Inicializar la salud actual con el valor máximo al iniciar el juego
@@ -33,22 +34,30 @@ public class SaludPersonaje : MonoBehaviour
     public void RecibirDanio(int cantidadDanio)
     {
         saludActual -= cantidadDanio; // Restar la cantidad de daño recibido a la salud actual
+        controller.SetDamageTrigger();
         tiempoUltimoDanio = Time.time; // Actualizar el tiempo del último daño recibido
 
         if (saludActual <= 0)
         {
             // Si la salud llega a cero, llamar a la función de muerte
-            Morir();
+            StartCoroutine(Death());
         }
     }
 
-    private void Morir()
+    IEnumerator Death()
     {
-        // Aquí puedes agregar la lógica para cuando el personaje muere, como reproducir una animación de muerte, desactivar controles, etc.
-        Debug.Log("El personaje ha muerto");
 
+        // Aquí puedes agregar la lógica para cuando el personaje muere, como reproducir una animación de muerte, desactivar controles, etc.
+        muerte.FireEvent();
+        Debug.Log("El personaje ha muerto");
+        controller.SetDeathTrigger();
+        yield return new WaitForSeconds(5f);
         // Cargar la escena del menú principal
         SceneManager.LoadScene("MenuPrincipal");
+    }
+    private void Morir()
+    {
+        
     }
 
     private System.Collections.IEnumerator RegenerarSalud()

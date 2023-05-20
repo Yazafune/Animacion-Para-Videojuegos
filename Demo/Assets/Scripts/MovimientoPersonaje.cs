@@ -10,16 +10,25 @@ public class MovimientoPersonaje : MonoBehaviour
     public float fuerzaSalto = 5f; // Fuerza de salto
 
     private float velocidadActual; // Velocidad actual de movimiento
+    private bool estaMuerto = false; // Indica si el personaje está muerto
     private Rigidbody rb; // Referencia al componente Rigidbody
+
+    [SerializeField] REvents muerte;
 
     private void Start()
     {
+        muerte.GEvent += Muerto;
         velocidadActual = velocidadMovimiento; // Establecer la velocidad actual al valor inicial
         rb = GetComponent<Rigidbody>(); // Obtener la referencia al componente Rigidbody
     }
 
     private void Update()
     {
+        if (estaMuerto)
+        {
+            return; // Si el personaje está muerto, no se permite el movimiento ni la rotación
+        }
+
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
 
@@ -51,9 +60,25 @@ public class MovimientoPersonaje : MonoBehaviour
         }
     }
 
+    private void Muerto()
+    {
+        estaMuerto = true;
+        rb.velocity = Vector3.zero; // Detener el movimiento
+        rb.angularVelocity = Vector3.zero; // Detener la rotación
+    }
+
     private void Saltar()
     {
         rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
     }
+
+    private void OnDestroy()
+    {
+        muerte.GEvent -= Muerto;
+    }
 }
+
+
+
+
 

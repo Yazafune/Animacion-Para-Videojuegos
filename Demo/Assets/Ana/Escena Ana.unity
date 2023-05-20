@@ -76172,7 +76172,7 @@ GameObject:
   - component: {fileID: 6630603857390860847}
   - component: {fileID: 6630603857390860854}
   - component: {fileID: 6597239566319525304}
-  - component: {fileID: 6630603857390860849}
+  - component: {fileID: 6630603857390860855}
   - component: {fileID: 6630603857390860848}
   - component: {fileID: 6630603857390860850}
   - component: {fileID: 6630603857390860851}
@@ -90867,7 +90867,7 @@ MonoBehaviour:
   onMoved:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6630603857390860849}
+      - m_Target: {fileID: 6630603857390860855}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetMotionValue
         m_Mode: 0
@@ -90879,18 +90879,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6630603857390860849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6291374470593355920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9579fa46acfb77848b82fc00cc483442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6630603857390860850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90906,7 +90894,7 @@ MonoBehaviour:
   onAttack:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6630603857390860849}
+      - m_Target: {fileID: 6630603857390860855}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetAttackTrigger
         m_Mode: 1
@@ -90933,7 +90921,7 @@ MonoBehaviour:
   onJump:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6630603857390860849}
+      - m_Target: {fileID: 6630603857390860855}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetJumpTrigger
         m_Mode: 1
@@ -90962,7 +90950,7 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6630603857390860849}
+      - m_Target: {fileID: 6630603857390860855}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetDeathTrigger
         m_Mode: 1
@@ -90977,7 +90965,7 @@ MonoBehaviour:
   onDamage:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6630603857390860849}
+      - m_Target: {fileID: 6630603857390860855}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
         m_MethodName: SetDamageTrigger
         m_Mode: 1
@@ -91016,6 +91004,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &6630603857390860855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291374470593355920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03da611f2c29ca649be74465751e8ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6632415679737907243
 GameObject:
   m_ObjectHideFlags: 0

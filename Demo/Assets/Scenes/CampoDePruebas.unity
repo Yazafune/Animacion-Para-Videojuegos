@@ -1529,6 +1529,7 @@ MonoBehaviour:
   trampa:
   - {fileID: 568310245}
   - {fileID: 1349739538}
+  camara: {fileID: 0}
 --- !u!154 &891411723
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -1924,7 +1925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410357160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.6, y: 6.89, z: 61.2}
+  m_LocalPosition: {x: -33.07, y: 8.59, z: 61.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80472,8 +80473,8 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -91472,7 +91473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadMovimiento: 5
-  velocidadSprint: 100
+  velocidadSprint: 20
   velocidadRotacion: 2
   fuerzaSalto: 0
 --- !u!65 &8761472498028115173

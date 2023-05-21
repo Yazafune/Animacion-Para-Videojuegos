@@ -2394,6 +2394,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Mu\xF1eco Karateca"
       objectReference: {fileID: 0}
+    - target: {fileID: 2041932141903770100, guid: 035fc5025ad656040b3d8e723cd87d4c, type: 3}
+      propertyPath: at1
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f63834a16b9ff49b57d50ae441ef80, type: 2}
+    - target: {fileID: 2041932141903770100, guid: 035fc5025ad656040b3d8e723cd87d4c, type: 3}
+      propertyPath: at2
+      value: 
+      objectReference: {fileID: 11400000, guid: 609b94d3b52751a44bc3e3960521375d, type: 2}
+    - target: {fileID: 2041932141903770100, guid: 035fc5025ad656040b3d8e723cd87d4c, type: 3}
+      propertyPath: at3
+      value: 
+      objectReference: {fileID: 11400000, guid: 12c5bffac4a95b74da90146f01baf81c, type: 2}
     - target: {fileID: 3378126005845093816, guid: 035fc5025ad656040b3d8e723cd87d4c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.35
@@ -21303,6 +21315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5120634480593317622}
+  at1: {fileID: 11400000, guid: b9f63834a16b9ff49b57d50ae441ef80, type: 2}
+  at2: {fileID: 11400000, guid: 609b94d3b52751a44bc3e3960521375d, type: 2}
+  at3: {fileID: 11400000, guid: 12c5bffac4a95b74da90146f01baf81c, type: 2}
 --- !u!64 &1769981928059582108
 MeshCollider:
   m_ObjectHideFlags: 0

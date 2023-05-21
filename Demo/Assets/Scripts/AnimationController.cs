@@ -6,6 +6,7 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] Animator animator;
+    [SerializeField] REvents at1,at2,at3;
     public void SetMotionValue(float value)
     {
         GetComponent<Animator>().SetFloat("MovementSpeed", value);
@@ -76,7 +77,7 @@ public class AnimationController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             animator.SetBool("IsAttacking1", true);
-
+            at1.FireEvent();
         }
 
         if (Input.GetButtonUp("Fire1"))
@@ -89,7 +90,7 @@ public class AnimationController : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             animator.SetBool("IsAttacking2", true);
-
+            at2.FireEvent();
         }
 
         if (Input.GetButtonUp("Fire2"))
@@ -102,7 +103,7 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             animator.SetBool("IsAttacking3", true);
-
+            at3.FireEvent();
         }
 
         if (Input.GetKeyUp(KeyCode.K))

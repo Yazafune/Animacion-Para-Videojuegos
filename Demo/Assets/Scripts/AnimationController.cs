@@ -85,6 +85,32 @@ public class AnimationController : MonoBehaviour
 
         }
 
+        //Ataque 2
+        if (Input.GetButtonDown("Fire2"))
+        {
+            animator.SetBool("IsAttacking2", true);
+
+        }
+
+        if (Input.GetButtonUp("Fire2"))
+        {
+            animator.SetBool("IsAttacking2", false);
+
+        }
+
+        //Ataque 3
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            animator.SetBool("IsAttacking3", true);
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            animator.SetBool("IsAttacking3", false);
+
+        }
+
     }
 
 }
